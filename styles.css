@@ -113,7 +113,7 @@ nav {
     position: relative;
     text-align: center;
     margin-top: 3.125rem;
-    z-index: 9999;
+    z-index: 99;
 }
 
 .hero-title {
@@ -365,6 +365,28 @@ margin: 0 5%;
     width: 100vw;
 }
 
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.75s, visibility 0.75s;
+    z-index: 999;
+}
+
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: url("./images/logo-1.gif");
+}
 
 @media screen and (max-width: 1500px) {
 
